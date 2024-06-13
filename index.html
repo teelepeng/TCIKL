@@ -1,5 +1,39 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>PDF Viewer</h1>
+    <div class="pdf-container">
+        <iframe src="Booklet_Weekly_News_Eng_1399.pdf"></iframe>
+    </div>
+</body>
+</html>
+
+.pdf-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Set the aspect ratio (height) */
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove border if needed */
+}
+
+
+	
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +44,6 @@
 	<p>
 	
 	<!-- Headings -->
-	<h1>Weekly News
 	
 	<h2>Weekly News (English)</h2>
 	<iframe src= "Booklet_Weekly_News_Eng_1399.pdf" width="100%" height="500px">
